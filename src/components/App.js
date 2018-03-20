@@ -69,7 +69,7 @@ class App extends Component {
     if (!this.props.sorted) {
       return (
         <button className="btn btn-primary" onClick={this.sortByCords.bind(this)}>
-          Sort By Closest
+          Sort By Distance
         </button>
       );
     }
