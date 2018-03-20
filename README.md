@@ -1,5 +1,7 @@
 Aiven homework for front-end developer.
 
+Demo: https://pure-stream-76473.herokuapp.com/
+
 Installation:
 1. git clone https://github.com/timivouti/cloud-selection.git
 2. cd cloud-selection
