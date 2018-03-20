@@ -87,6 +87,7 @@ class App extends Component {
               <option value="null">Select</option>
               <option value="Asia">Asia</option>
               <option value="Australia">Australia</option>
+              <option value="Canada">Canada</option>
               <option value="Europe">Europe</option>
               <option value="South America">South America</option>
               <option value="United States">United States</option>
