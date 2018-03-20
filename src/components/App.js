@@ -11,38 +11,24 @@ class App extends Component {
 
   renderClouds(cloud) {
     const { provider, location } = this.props;
+    const returnRow = (
+      <tr key={cloud.cloud_description}>
+        <th>{cloud.cloud_description}</th>
+        <th>{cloud.cloud_name}</th>
+        </tr>
+      );
 
     if (provider === 'null' && location === 'null') {
-      return (
-        <tr key={cloud.cloud_description}>
-          <th>{cloud.cloud_description}</th>
-          <th>{cloud.cloud_name}</th>
-          </tr>
-        );
+      return returnRow;
     }
     if (provider !== 'null' && _.includes(cloud.cloud_description, provider) && location === 'null') {
-      return (
-        <tr key={cloud.cloud_description}>
-          <th>{cloud.cloud_description}</th>
-          <th>{cloud.cloud_name}</th>
-          </tr>
-        );
+      return returnRow;
     }
     if (provider === 'null' && location !== 'null' && _.includes(cloud.cloud_description, location)) {
-      return (
-        <tr key={cloud.cloud_description}>
-          <th>{cloud.cloud_description}</th>
-          <th>{cloud.cloud_name}</th>
-          </tr>
-        );
+      return returnRow;
     }
     if (provider !== 'null' && location !== 'null' && _.includes(cloud.cloud_description, provider) && _.includes(cloud.cloud_description, location)) {
-      return (
-        <tr key={cloud.cloud_description}>
-          <th>{cloud.cloud_description}</th>
-          <th>{cloud.cloud_name}</th>
-          </tr>
-        );
+      return returnRow;
     }
   }
 
