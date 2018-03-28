@@ -1,4 +1,4 @@
-Aiven homework for front-end developer.
+React with Redux.
 
 Demo: https://pure-stream-76473.herokuapp.com/
 
